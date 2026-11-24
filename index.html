@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#14213d">
+  <title>MathProfessor AI</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjs@13.2.0/lib/browser/math.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand-mark">∑</div>
+    <div><strong>MathProfessor AI</strong><small>Your personal mathematics classroom</small></div>
+    <span class="phase">Prototype · Phase 1</span>
+  </header>
+
+  <main class="layout">
+    <section class="welcome">
+      <p class="eyebrow">WELCOME TO YOUR CLASSROOM</p>
+      <h1>Let's make mathematics make sense.</h1>
+      <p class="intro">Explore a problem, see the working, and build understanding one step at a time.</p>
+    </section>
+
+    <section class="workspace">
+      <div class="panel problem-panel">
+        <div class="panel-heading">
+          <div><p class="eyebrow">MATHEMATICS WORKSPACE</p><h2>Ask your professor</h2></div>
+          <span class="status-dot">Offline-ready shell</span>
+        </div>
+        <label for="problem">Enter an expression or calculation</label>
+        <textarea id="problem" rows="3" placeholder="Examples: 2*(3+4)&#10;sqrt(81)&#10;differentiate(x^2, x)"></textarea>
+        <div class="examples">
+          <button class="example" data-value="2*(3+4)">Arithmetic</button>
+          <button class="example" data-value="sqrt(81)">Square root</button>
+          <button class="example" data-value="sin(pi/2)">Trigonometry</button>
+        </div>
+        <button id="solve" class="primary">Solve problem <span>→</span></button>
+        <p class="hint">Phase 1 supports selected calculations. It is not yet a full AI tutor or proof engine.</p>
+      </div>
+
+      <div class="panel answer-panel" aria-live="polite">
+        <p class="eyebrow">PROFESSOR'S WORKSPACE</p>
+        <h2 id="answer-title">Your solution will appear here</h2>
+        <div id="answer" class="answer-content">
+          <div class="empty-symbol">∫</div>
+          <p>Enter a problem above and select <strong>Solve problem</strong>.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel roadmap">
+      <p class="eyebrow">OUR ROADMAP</p>
+      <div class="roadmap-grid">
+        <div class="roadmap-item current"><span>01</span><strong>Math engine</strong><small>In progress</small></div>
+        <div class="roadmap-item"><span>02</span><strong>Teaching intelligence</strong><small>Coming next</small></div>
+        <div class="roadmap-item"><span>03</span><strong>Interactive whiteboard</strong><small>Planned</small></div>
+        <div class="roadmap-item"><span>04</span><strong>Voice and professor avatar</strong><small>Planned</small></div>
+      </div>
+    </section>
+  </main>
+  <footer>MathProfessor AI · Built to help you understand, not just get an answer.</footer>
+</body>
+</html>

@@ -1,0 +1,11 @@
+{
+  "name": "MathProfessor AI",
+  "short_name": "MathProfessor",
+  "description": "A personal mathematics learning workspace",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f5f7fb",
+  "theme_color": "#14213d",
+  "icons": []
+}
